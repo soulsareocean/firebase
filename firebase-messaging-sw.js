@@ -1,9 +1,17 @@
-importScripts('https://www.gstatic.com/firebasejs/3.7.2/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/3.7.2/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/4.1.1/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/4.1.1/firebase.js');
 
-firebase.initializeApp({
-    'messagingSenderId': '494991363689'
-});
+var config = {
+    apiKey: "AIzaSyDtfDX6ZbWHalyzqpX98oPa0tJYybNS0p8",
+    authDomain: "clickclient-777df.firebaseapp.com",
+    databaseURL: "https://clickclient-777df.firebaseio.com",
+    projectId: "clickclient-777df",
+    storageBucket: "clickclient-777df.appspot.com",
+    messagingSenderId: "494991363689"
+  };
+  firebase.initializeApp(config);
+const messaging = firebase.messaging();
 
 firebase.messaging();
 
