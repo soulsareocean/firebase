@@ -1,8 +1,3 @@
-firebase.initializeApp({
-    messagingSenderId: '494991363689'
-});
-
-
 var bt_register = $('#register');
 var bt_delete = $('#delete');
 var token = $('#token');
